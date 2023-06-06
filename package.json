@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint --fix '**/*.{ts,tsx,js,jsx}' && prettier --write . && sort-package-json",
     "serve": "rm -rf docs && rm -rf .parcel-cache && parcel src/index.html --dist-dir docs",
-    "release": "rm -rf docs && rm -rf .parcel-cache && parcel build src/index.html --dist-dir docs",
+    "release": "rm -rf docs && rm -rf .parcel-cache && parcel build src/index.html --dist-dir docs --public-url ./",
     "serve-prod": "http-server docs -c-1"
   },
   "devDependencies": {
@@ -21,7 +21,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "http-server": "^14.1.1",
     "manate": "^0.3.9",
-    "parcel": "^2.9.1",
+    "parcel": "2.8.3",
     "prettier": "^2.8.8",
     "process": "^0.11.10",
     "react": "^18.2.0",
