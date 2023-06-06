@@ -1,0 +1,15 @@
+@import '../node_modules/antd/dist/reset.css';
+
+body {
+  padding: 1rem;
+}
+
+.rotate-image {
+  transform: rotate(-90deg);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
